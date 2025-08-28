@@ -7,7 +7,7 @@
 
 import re
 
-texto = "En 2023, había 15 estudiantes y 3 profesores."
+texto = input("Ingresa el texto con numeros enteros: ")
 
 # Expresión regular para enteros (positivos y negativos)
 patron = r"-?\b\d+\b"

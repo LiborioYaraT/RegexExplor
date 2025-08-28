@@ -11,3 +11,6 @@ Utiliza expresiones regulares en Java para encontrar todos los números flotante
 
 ## Objetivo
 Practicar el uso de regex en Java para encontrar números flotantes en cadenas de texto.
+
+# Texto usado para probar el código:
+La botella contiene 2.5 litros de agua. Después de beber 0.75 litros, quedan 1.75 litros. El recipiente puede llenarse hasta 3.2 litros, pero hoy solo se usarán 2.8 litros.

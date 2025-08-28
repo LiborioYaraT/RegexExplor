@@ -5,11 +5,17 @@
 // 3. Buscar todos los flotantes en el texto.
 // 4. Imprimir los resultados.
 
+import java.util.Scanner;
 import java.util.regex.*;
 
 public class Reto2 {
     public static void main(String[] args) {
-        String texto = "El precio es 12.50 dólares, pero antes era 10.0.";
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa el texto: ");
+        String texto = scanner.nextLine();
+
+
         // Expresión regular para flotantes (números con punto decimal)
         String patron = "-?\\b\\d+\\.\\d+\\b";
         Pattern pattern = Pattern.compile(patron);
@@ -18,7 +24,9 @@ public class Reto2 {
         while (matcher.find()) {
             System.out.print(matcher.group() + " ");
         }
+        scanner.close();
         System.out.println();
+
         // Paso a paso:
         // 1. Cambia el texto de prueba.
         // 2. Modifica la expresión regular si es necesario.

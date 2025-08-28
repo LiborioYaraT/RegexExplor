@@ -7,7 +7,7 @@
 
 import re
 
-texto = "Las listas son [1, 2, 3] y [4, 5, 6]."
+texto = input("Ingresa el texto con listas de numeros: ")
 
 # Expresión regular para listas de números
 patron = r"\[\s*\d+(?:\s*,\s*\d+)*\s*\]"

@@ -7,7 +7,7 @@
 
 import re
 
-texto = "La respuesta es True, pero a veces es False."
+texto = input("Ingresa el texto con Booleans: ")
 
 # Expresión regular para booleanos (True o False, case-insensitive)
 patron = r"\b(True|False)\b"

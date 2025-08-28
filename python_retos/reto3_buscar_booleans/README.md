@@ -11,3 +11,6 @@ Utiliza expresiones regulares en Python para encontrar todos los valores boolean
 
 ## Objetivo
 Aprender a buscar valores booleanos en cadenas de texto usando regex.
+
+# Texto Usado para Provar el código:
+En el sistema de seguridad, la variable "alarma_activada" es True cuando detecta movimiento. Si la puerta está cerrada, la variable "puerta_cerrada" es True; de lo contrario, es False. Cuando ambas son True, se envía una alerta al celular.

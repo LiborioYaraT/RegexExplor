@@ -7,7 +7,7 @@
 
 import re
 
-texto = "El precio es 12.50 dólares, pero antes era 10.0."
+texto = input("Ingresa el texto con floats: ")
 
 # Expresión regular para flotantes (números con punto decimal)
 patron = r"-?\b\d+\.\d+\b"

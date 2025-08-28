@@ -5,11 +5,15 @@
 // 3. Buscar todos los booleanos en el texto.
 // 4. Imprimir los resultados.
 
+import java.util.Scanner;
 import java.util.regex.*;
 
 public class Reto3 {
     public static void main(String[] args) {
-        String texto = "La respuesta es True, pero a veces es False.";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa el texto: ");
+        String texto = scanner.nextLine();
+
         // Expresión regular para booleanos (True o False, case-insensitive)
         String patron = "\\b(True|False)\\b";
         Pattern pattern = Pattern.compile(patron, Pattern.CASE_INSENSITIVE);
@@ -19,6 +23,8 @@ public class Reto3 {
             System.out.print(matcher.group() + " ");
         }
         System.out.println();
+        scanner.close();
+
         // Paso a paso:
         // 1. Cambia el texto de prueba.
         // 2. Modifica la expresión regular si es necesario.

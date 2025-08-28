@@ -7,7 +7,7 @@ patrones = {
     'Entero': r'-?\b\d+\b', 
     'Flotante': r'-?\b\d+\.\d+\b',
     'Booleano': r'\b(True|False)\b',
-    'String': r'\w[a-zA-Z]+',
+    'String': r'"[^"]*"',
     'Lista de números': r'\[[-\d,\s\.]+\]'
 }
 

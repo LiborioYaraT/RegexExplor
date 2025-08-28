@@ -5,11 +5,16 @@
 // 3. Buscar todos los enteros en el texto.
 // 4. Imprimir los resultados.
 
+import java.util.Scanner;
 import java.util.regex.*;
 
 public class Reto1 {
     public static void main(String[] args) {
-        String texto = "En 2023, había 15 estudiantes y 3 profesores.";
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingresa el texto: ");
+        String texto = scanner.nextLine();
+
         // Expresión regular para enteros (positivos y negativos)
         String patron = "-?\\b\\d+\\b";
         Pattern pattern = Pattern.compile(patron);
@@ -19,6 +24,8 @@ public class Reto1 {
             System.out.print(matcher.group() + " ");
         }
         System.out.println();
+        scanner.close();
+
         // Paso a paso:
         // 1. Cambia el texto de prueba.
         // 2. Modifica la expresión regular si es necesario.

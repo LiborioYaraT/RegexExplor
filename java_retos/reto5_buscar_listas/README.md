@@ -11,3 +11,6 @@ Utiliza expresiones regulares en Java para encontrar todas las listas de número
 
 ## Objetivo
 Aprender a buscar listas de números en cadenas de texto usando regex en Java.
+
+# Texto usado para probar el código:
+Los precios fueron [10, 20, 30] y las cantidades [5, 15, 25, 35]. También tengo [1, 2, 3] y [100, 200, 300] en stock.

@@ -5,11 +5,16 @@
 // 3. Buscar todas las listas en el texto.
 // 4. Imprimir los resultados.
 
+import java.util.Scanner;
 import java.util.regex.*;
 
 public class Reto5 {
     public static void main(String[] args) {
-        String texto = "Las listas son [1, 2, 3] y [4, 5, 6].";
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrsa el texto: ");
+        String texto = scanner.nextLine();
+
         // Expresión regular para listas de números
         String patron = "\\[\\s*\\d+(?:\\s*,\\s*\\d+)*\\s*\\]";
         Pattern pattern = Pattern.compile(patron);
@@ -19,6 +24,8 @@ public class Reto5 {
             System.out.print(matcher.group() + " ");
         }
         System.out.println();
+        scanner.close();
+
         // Paso a paso:
         // 1. Cambia el texto de prueba.
         // 2. Modifica la expresión regular si es necesario.

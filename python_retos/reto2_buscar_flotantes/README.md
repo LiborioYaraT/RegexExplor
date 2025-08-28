@@ -13,6 +13,4 @@ Utiliza expresiones regulares en Python para encontrar todos los números flotan
 Practicar el uso de regex para encontrar números flotantes en cadenas de texto.
 
 # Texto usado para probar el código:
-Por supuesto, aquí tienes un texto corto con números float:
-
 La botella contiene 2.5 litros de agua. Después de beber 0.75 litros, quedan 1.75 litros. El recipiente puede llenarse hasta 3.2 litros, pero hoy solo se usarán 2.8 litros.

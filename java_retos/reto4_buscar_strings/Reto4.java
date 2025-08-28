@@ -5,11 +5,16 @@
 // 3. Buscar todos los strings en el texto.
 // 4. Imprimir los resultados.
 
+import java.util.Scanner;
 import java.util.regex.*;
 
 public class Reto4 {
     public static void main(String[] args) {
-        String texto = "El mensaje es \"Hola mundo\" y la clave es \"1234\".";
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrsa el texto: ");
+        String texto = scanner.nextLine();
+
         // Expresión regular para strings entre comillas dobles
         String patron = "\"(.*?)\"";
         Pattern pattern = Pattern.compile(patron);
@@ -19,6 +24,8 @@ public class Reto4 {
             System.out.print(matcher.group(1) + " ");
         }
         System.out.println();
+        scanner.close();
+
         // Paso a paso:
         // 1. Cambia el texto de prueba.
         // 2. Modifica la expresión regular si es necesario.

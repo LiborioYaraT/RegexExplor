@@ -11,3 +11,6 @@ Utiliza expresiones regulares en Java para encontrar todas las cadenas de texto 
 
 ## Objetivo
 Practicar el uso de regex en Java para encontrar cadenas de texto entre comillas en un texto.
+
+# Texo usado para probar el codigo:
+El libro se titula "El viaje mágico". Su autor es "Ana Gómez" y fue publicado en el año 2023. En el resumen se leen frases como "aventura", "amistad" y "descubrimiento".

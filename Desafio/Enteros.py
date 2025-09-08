@@ -9,40 +9,4 @@ unicos = set(coincidencias)
 
 print(f"Enteros únicos encontrados: {len(unicos)}")
 print(f"Enteros totales encontrados (incluyendo repetidos): {len(coincidencias)}")
-#print("Únicos:", list(unicos))
-
-patron_float = r'-?\d+\.\d+'
-
-coincidencias = re.findall(patron_float, texto)
-unicos = set(coincidencias)
-
-print(f"Floats únicos encontrados: {len(unicos)}")
-print(f"Floats totales encontrados (incluyendo repetidos): {len(coincidencias)}")
-#print("Ejemplos únicos:", list(unicos)[:5])
-
-patron_booleano = r'\b(True|False|true|false)\b'
-
-coincidencias = re.findall(patron_booleano, texto)
-unicos = set(coincidencias)
-
-print(f"Booleanos únicos encontrados: {len(unicos)}")
-print(f"Booleanos totales encontrados (incluyendo repetidos): {len(coincidencias)}")
-#print("Ejemplos únicos:", list(unicos))
-
-patron_string = r'"[^"]*"'
-
-coincidencias = re.findall(patron_string, texto)
-unicos = set(coincidencias)
-
-print(f"Strings únicos encontrados: {len(unicos)}")
-print(f"Strings totales encontrados (incluyendo repetidos): {len(coincidencias)}")
-#print("Ejemplos únicos:", list(unicos)[:5])
-
-patron_lista = r'\[(?:\s*-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\s*,)*\s*(?:-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?|\.\.\.)\s*\]'
-
-coincidencias = re.findall(patron_lista, texto)
-unicos = set(coincidencias)
-
-print(f"Listas de números únicas encontradas: {len(unicos)}")
-print(f"Listas de números totales encontradas (incluyendo repetidas): {len(coincidencias)}")
-#print("Úicas:", list(unicos)[:5])
+print("Únicos:", list(unicos))
